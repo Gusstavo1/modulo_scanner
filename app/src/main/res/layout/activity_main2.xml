@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/TextViewOrangeTitle"
+                android:layout_marginBottom="8dp"
+                android:text="@string/tv_add_card" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAlias"
+                    style="@style/ProfileTextInputEditText"
+                    android:hint="@string/alias_hint"
+                    android:inputType="textCapWords" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCardName"
+                    style="@style/ProfileTextInputEditText"
+                    android:hint="@string/card_name_hint"
+                    android:inputType="textCapWords" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnScanCard"
+                style="@style/ButtonStrokeGray"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/background_gray_round_button"
+                android:drawableStart="@drawable/ic_scan_card"
+                android:drawablePadding="16dp"
+                android:paddingStart="28dp"
+                android:paddingEnd="16dp"
+                android:text="@string/btn_scan_card"
+                android:textColor="@color/blackFont" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCardNumber"
+                    style="@style/ProfileTextInputEditText"
+                    android:hint="@string/card_number_hint"
+                    android:inputType="number"
+                    android:maxLength="16" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/TextViewOrangeTitle"
+                android:layout_marginBottom="8dp"
+                android:text="@string/tv_card_date" />
+
+            <Button
+                android:id="@+id/btnCardExp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:background="@drawable/background_stroke_box"
+                android:text="@string/btn_select"
+                android:textAllCaps="false"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSecureCode"
+                    style="@style/ProfileTextInputEditText"
+                    android:hint="@string/secure_code_hint"
+                    android:inputType="number"
+                    android:maxLength="3" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/tv_warranty"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@style/ButtonStrokeRed"
+                android:layout_marginTop="20dp"
+                android:text="@string/btn_save" />
+
+            <Button
+                android:id="@+id/btnMobile"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStrokeGray"
+                android:text="@string/btn_mobile" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

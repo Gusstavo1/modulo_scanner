@@ -6,4 +6,16 @@
     <string name="vencimiento"><font size="12">MM/AA</font></string>
     <string name="codigo"><font size="12">Código de seguridad</font></string>
 
+    <string name="tv_add_card">Agrega una tarjeta en la que recibirás el pago de las consultas que realices.</string>
+    <string name="alias_hint">Alias</string>
+    <string name="card_name_hint">Nombre del Titular (como aparece en la tarjeta)</string>
+    <string name="btn_scan_card">Escanear tarjeta</string>
+    <string name="card_number_hint">Número de la Tarjeta</string>
+    <string name="tv_card_date">Fecha de vencimiento (mes-año).</string>
+    <string name="secure_code_hint">Código de Seguridad (CVV)</string>
+    <string name="tv_warranty">Garantizamos la seguridad de los datos de tu tarjeta y no se guardará el Código de Seguridad en ningún momento.</string>
+    <string name="btn_save">Guardar</string>
+    <string name="btn_mobile">Solicitar tarjeta MobileCard</string>
+    <string name="btn_select">Seleccionar</string>
+
 </resources>
