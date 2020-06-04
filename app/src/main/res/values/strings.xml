@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Scanner</string>
+    <string name="alias"><font size="12">Alias</font></string>
+    <string name="titular"><font size="12">Nombre del Títular (como aparece en la tarjeta)</font></string>
+    <string name="numero"><font size="12">Número de la Tarjeta</font></string>
+    <string name="vencimiento"><font size="12">MM/AA</font></string>
+    <string name="codigo"><font size="12">Código de seguridad</font></string>
+
+</resources>
