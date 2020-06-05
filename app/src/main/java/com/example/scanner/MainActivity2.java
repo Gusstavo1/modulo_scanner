@@ -33,11 +33,10 @@ public class MainActivity2 extends AppCompatActivity implements Validator.Valida
     private final String message = "Todos los campos son obligatorios";
     @NotEmpty(message = message)
     private EditText etAlias, etCardName;
-    @Length(min = 16)
+    @Length(min = 16,message = "Debe contener almenos 16 dígitos")
     private EditText etCardNumber;
-    @Length(min = 3)
+    @Length(min = 3,message = "Debe contener 3 dígitos")
     private EditText etSecureCode;
-
     private String expiration = "Seleccione";
     private Boolean expirationSelected = false;
     private Button btnExpiration,btnScanCard;
@@ -59,6 +58,7 @@ public class MainActivity2 extends AppCompatActivity implements Validator.Valida
         etSecureCode = findViewById(R.id.etSecureCode);
         btnExpiration = findViewById(R.id.btnCardExp);
         btnScanCard = findViewById(R.id.btnScanCard);
+
 
 
         btnScanCard.setOnClickListener(button ->{
